@@ -22,10 +22,10 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 // we're giving you this one for free...
 const indexRoute = require('./routes/index');
 // but you may need to add another one. 🤔
-
+const pizzaRoute = require('./routes/pizza');
 /* set routes */
 app.use('/', indexRoute);
-app.use('/pizza'/* name of route */);
+app.use('/pizza', pizzaRoute);
 
 /* error handler */
 app.get('*', function(req, res) {

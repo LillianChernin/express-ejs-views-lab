@@ -1,3 +1,12 @@
 <!--
   This view should only display one pizza, with flavor, location, and picture.
 -->
+<% include ../partials/header %>
+
+<div class='<%= pizzaClass %>'>
+  <h3><%= pizza.flavor%></h3>
+  <span class='location'><%= pizza.location %></span>
+  <img class='image' src='<%= pizza.image %>' alt='<%= pizza.flavor %>' + ' pizza' width='500'>
+</div>
+
+<% include ../partials/footer %>
