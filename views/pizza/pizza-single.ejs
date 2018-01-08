@@ -4,9 +4,9 @@
 <% include ../partials/header %>
 
 <div class='<%= pizzaClass %>'>
-  <h3><%= pizza.flavor%></h3>
-  <span class='location'><%= pizza.location %></span>
-  <img class='image' src='<%= pizza.image %>' alt='<%= pizza.flavor %>' + ' pizza' width='500'>
+  <h3 class='pizza-flavor'><%= pizza.flavor%></h3>
+  <p class='location'>Location: <%= pizza.location %></p>
+  <img class='image' src='<%= pizza.image %>' alt='<%= pizza.flavor %>' + ' pizza'>
 </div>
 
 <% include ../partials/footer %>

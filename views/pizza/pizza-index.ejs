@@ -6,8 +6,8 @@
 <div class='pizza'>
   <% pizza.forEach(function(pizza) { %>
     <div class='my-pizza'>
-      <h3><%= pizza.flavor %></h3>
-      <span class='location'><%= pizza.location %></span>
+      <h3 class='pizza-flavor'><%= pizza.flavor %></h3>
+      <p class='location'>Location: <%= pizza.location %></p>
       <img class='image' src='<%= pizza.image %>' alt='<%= pizza.flavor %>' + ' pizza'>
     </div>
 <%  }) %>

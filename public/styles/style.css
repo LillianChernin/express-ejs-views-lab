@@ -1,0 +1,12 @@
+.image {
+  width: 40%;
+}
+.location {
+  font-size: 18px;
+}
+.single-pizza {
+  font-size: 24px;
+}
+.pizza-flavor {
+  text-transform: capitalize;
+}
