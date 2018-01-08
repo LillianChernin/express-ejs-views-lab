@@ -1,0 +1,33 @@
+{
+  "name": "express-ejs-views-lab",
+  "version": "1.0.0",
+  "description": "Pizza lab!",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LillianChernin/express-ejs-views-lab.git"
+  },
+  "keywords": [
+    "express",
+    "views",
+    "pizza"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LillianChernin/express-ejs-views-lab/issues"
+  },
+  "homepage": "https://github.com/LillianChernin/express-ejs-views-lab#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jest": "^22.0.4",
+    "morgan": "^1.9.0",
+    "supertest": "^3.0.0",
+    "supertest-as-promised": "^4.0.2"
+  }
+}
