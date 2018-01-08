@@ -21,6 +21,15 @@ pizzaRoutes.get('/', function(request, response) {
 
 pizzaRoutes.get('/:id', function(request, response) {
   let id = request.params.id;
+  for (let i = 0; i < pizzaData.length; i++) {
+    if (id === pizzaData[i].flavorKey) {
+      response.render('pizza/pizza-single.ejs', {
+        documentTitle: 'Ada\'s Pizza!',
+        pizzaClass: 'single-pizza',
+        pizza: pizzaData[i]
+      });
+    }
+  }
   response.render('pizza/pizza-single.ejs', {
     documentTitle: 'Ada\'s Pizza!',
     pizzaClass: 'single-pizza',
