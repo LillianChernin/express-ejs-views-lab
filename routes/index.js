@@ -6,7 +6,7 @@ indexRoute.get('/', function(req, res) {
   res.render('index', {
     //       | fill in this object!
     //       V   what should it have?? Maybe run `npm jest` and find out :)
-    data: 'goes here'
+    documentTitle: 'Ada\'s Pizza'
   });
 });
 
